@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+	background-position: center center;
+	background-size: contain;
+	height: 100vh;
+	position: relative;
+	padding: 1rem;
+}
+
+.clock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100vw;
+	max-width: 400px;
+	font-size: 5rem;
+	text-align: center;
+	margin: 0 auto;
+	color: #413a3f;
+	font-family: 'Verdana';
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1rem;
+}
+
+.clock div {
+	padding: 1rem;
+	background-color: transparent;
+	border-radius: 15px;
+	box-shadow: #413a3f 0 0 0.5rem 0.25rem;
+}
+
+@media screen and (max-width: 600px) {
+	.clock {
+		font-size: 3rem;
+	}
+}
